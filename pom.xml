@@ -27,6 +27,32 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+		
+		<!-- WEB MVC를 사용하여 웹 어플리케이션을 만드는 데에 필요한 스프링부트의 기본적인 요소 -->
+		<!-- 내장형 컨테이너로 톰캣을 기본으로 탑재 -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
+		</dependency>
+		
+		<!-- 스프링 부트의 톰캣이 JSP를 지원하도록 해주는 의존성 -->
+		<dependency>
+			<groupId>org.apache.tomcat.embed</groupId>
+			<artifactId>tomcat-embed-jasper</artifactId>
+		</dependency>
+		
+		<!-- JSTL 의존성 -->
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>jstl</artifactId>
+		</dependency>
+		
+		<!-- 편하게 개발에 집중할 수 있도록 도움을 줌 -->
+		<!-- 캐시를 사용하여 성능을 올려주고 파일 저장시(파일 변경시) 자동 재시작 기능 -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-devtools</artifactId>
+		</dependency>
 	</dependencies>
 
 	<build>
