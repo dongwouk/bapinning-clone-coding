@@ -51,4 +51,17 @@ git remote add origin https://github.com/dongwouk/bapinning-clone-coding.git 주
 
 git push -u origin master
 
+pom.xml 의존성
+
+WEB MVC를 사용하여 웹 어플리케이션을 만드는 데에 필요한 스프링부트의 기본적인 요소
+내장형 컨테이너로 톰캣을 기본으로 탑재
+	<groupId>org.springframework.boot</groupId>
+	<artifactId>spring-boot-starter-web</artifactId>
+
+application.properties 설정
+서버 포트 설정
+server.port = 8080
+
+view 이름으로부터 사용할 view 오브젝트 매핑 설정
+view resolver 설정
 
