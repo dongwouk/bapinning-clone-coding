@@ -65,3 +65,6 @@ server.port = 8080
 view 이름으로부터 사용할 view 오브젝트 매핑 설정
 view resolver 설정
 
+
+프로젝트 DB설계
+ERD
