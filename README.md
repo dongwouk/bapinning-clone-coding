@@ -18,7 +18,7 @@ JVM의 변화
 컬렉션을 위한 대용량 데이터 처리 ( 스트림 )
 Optional
 Base64 인코딩과 디코딩을 위한 표준 API
-새로운 날짜, 시간 API (Date & Time API
+새로운 날짜, 시간 API (Date & Time API)
 
 pom.xml 설정
 java 8 을 사용함으로 이에 호환되는 boot 2 버전을 사용
