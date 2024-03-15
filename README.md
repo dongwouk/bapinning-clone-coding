@@ -128,6 +128,12 @@ git push -u origin master
     - context path 설정
         - server.servlet.context-path=/app
 
+- Chromdriver 추가
+    - KBO 정보를 가져오기 위하여 드라이버 추가
+
+- 이미지 파일 추가
+    - 밥이닝 사이트 이미지
+      
 프로젝트 DB설계 ERD..
 
 로드맵 작성
