@@ -152,4 +152,3 @@ sdaf
 - **프로젝트 코드 git 연동**
     - 프로젝트 폴더에서 git bash here 실행
 
-dsf
