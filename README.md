@@ -153,3 +153,173 @@ sdaf
     - 프로젝트 폴더에서 git bash here 실행
 
 dsf
+
+# Dependency
+
+객체의 세계에서 협력은 필수적, 파라미터 리턴값 또는 지역변수 등으로 다른 객체를 참조
+
+---
+
+### Boot, JDK 설정
+
+- **version**
+    - 버전 설정
+    - `spring boot 2.4.2`
+    - `JDK 8`
+    - 프로젝트 버전 변경값을 적용하기 위한 프로젝트 meven update 필수
+    
+    ```xml
+    <parent>
+    		<groupId>org.springframework.boot</groupId>
+    		<artifactId>spring-boot-starter-parent</artifactId>
+    		<version>2.4.2</version>
+    		<!-- Spring boot 2 버전 변경 -->
+    		<relativePath/>
+    	</parent>
+    <properties>
+    		<java.version>1.8</java.version>
+    		<!-- JDK 8 버전 변경 -->
+    	</properties>
+    ```
+    
+
+### MVC Starter 패키지
+
+- **spring-boot-starter-web**
+    - WEB MVC를 사용하여 웹 어플리케이션을 만드는 데에 필요한 스프링부트의 기본적인 요소 내장형 컨테이너로 톰캣을 기본으로 탑재
+
+```xml
+<dependency>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-web</artifactId>
+</dependency>
+```
+
+- **tomcat-embed-jasper**
+    - 스프링 부트의 톰캣이 JSP를 지원하도록 해주는 의존성
+
+```xml
+<dependency>
+		<groupId>org.apache.tomcat.embed</groupId>
+		<artifactId>tomcat-embed-jasper</artifactId>
+</dependency>
+```
+
+- **jstl**
+    - JSP에서 (반복과 조건, 데이터 관리 포맷, XML 조작, 데이터베이스 엑세스)을 구현하는 커스텀 태그 라이브러리를 사용하게 해준다
+
+```xml
+<dependency>
+		<groupId>javax.servlet</groupId>
+		<artifactId>jstl</artifactId>
+</dependency>
+```
+
+- **spring-boot-devtools**
+    - 편하게 개발에 집중할 수 있도록 도움을 줌
+    - 캐시를 사용하여 성능을 올려주고 파일 저장시(파일 변경시) 자동 재시작 기능
+
+```xml
+<dependency>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-devtools</artifactId>
+</dependency>
+```
+
+### DB 연동
+
+- **mybatis-spring-boot-starter**
+    - mybatis 연동하기 위한 의존성
+
+```xml
+<dependency>
+		<groupId>org.mybatis.spring.boot</groupId>
+		<artifactId>mybatis-spring-boot-starter</artifactId>
+		<version>2.1.4</version>
+</dependency>
+```
+
+- **ojdbc6**
+    - 자바에서 oracle DB에 접속 / 관리 할 수 있게 해주는 API
+
+```xml
+<dependency>
+		<groupId>com.jslsolucoes</groupId>
+		<artifactId>ojdbc6</artifactId>
+		<version>11.2.0.1.0</version>
+</dependency>
+```
+
+### 웹 크롤링
+
+- **jsoup**
+    - 웹 크롤링 작업을 위한 의존성
+
+```xml
+<dependency>
+		<groupId>org.jsoup</groupId>
+		<artifactId>jsoup</artifactId>
+		<version>1.16.1</version>
+</dependency>
+```
+
+- **Selenium WebDriver**
+    - 동적 웹크롤링을 위한 의존성
+
+```xml
+<dependency>
+		<groupId>org.seleniumhq.selenium</groupId>
+		<artifactId>selenium-java</artifactId>
+		<version>3.141.59</version> <!-- 최신 버전 확인 -->
+</dependency>
+```
+
+### 어노테이션
+
+- **Lombok**
+    - 여러가지 어노테이션 지원
+
+```xml
+<dependency>
+		<groupId>org.projectlombok</groupId>
+		<artifactId>lombok</artifactId>
+		<version>1.18.30</version>
+		<scope>provided</scope>
+	</dependency>
+```
+
+### mail발송기능
+
+- **mail**
+    - mail 발송 기능 구현하기 위한 의존성
+
+```xml
+<dependency>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-mail</artifactId>
+</dependency>
+```
+
+### Commons
+
+- **commons io**
+    - 파일 및 디렉토리 관리 작업의 효율을 증가하는 의존성
+
+```xml
+<dependency>
+		<groupId>commons-io</groupId>
+		<artifactId>commons-io</artifactId>
+		<version>2.6</version>
+</dependency>
+```
+
+- **파일업로드**
+    - 파일 업로드를 위한 의존성
+
+```xml
+<dependency>
+		<groupId>commons-fileupload</groupId>
+		<artifactId>commons-fileupload</artifactId>
+		<version>1.3.1</version>
+</dependency>
+```
